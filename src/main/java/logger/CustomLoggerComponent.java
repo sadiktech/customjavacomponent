@@ -44,11 +44,11 @@ public class CustomLoggerComponent {
 		
 		if(!Utils.isEmpty(strValues)){ 
 			 stage=  (null==strValues.get("stage") || "".equals(String.valueOf(strValues.get("stage"))))? "" : String.valueOf(strValues.get("stage"));
-			 source= (null==strValues.get(1) || "".equals(String.valueOf(strValues.get(1))))? "" : String.valueOf(strValues.get("source"));
-			 unique =  (null==strValues.get(2) || "".equals(String.valueOf(strValues.get(2))))?"": String.valueOf(strValues.get("unique"));
-			 message= (null==strValues.get(3) || "".equals(String.valueOf(strValues.get(3))))?"": String.valueOf(strValues.get("message"));
-			 payload = (null==strValues.get(4) || "".equals(String.valueOf(strValues.get(4))))?"":String.valueOf(strValues.get("payload"));
-			 logger.info("stage "+ stage +" source :"+source +" unique :"+unique +" message :"+message+" payload :"+payload);
+			 source= (null==strValues.get("source") || "".equals(String.valueOf(strValues.get("source"))))? "" : String.valueOf(strValues.get("source"));
+			 unique =  (null==strValues.get("source") || "".equals(String.valueOf(strValues.get("source"))))?"": String.valueOf(strValues.get("unique"));
+			 message= (null==strValues.get("unique") || "".equals(String.valueOf(strValues.get("unique"))))?"": String.valueOf(strValues.get("message"));
+			 payload = (null==strValues.get("payload") || "".equals(String.valueOf(strValues.get("payload"))))?"":String.valueOf(strValues.get("payload"));
+			 logger.info("stage :"+ stage +" source :"+source +" unique :"+unique +" message :"+message+" payload :"+payload);
 			}
 		}
 	
